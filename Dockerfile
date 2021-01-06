@@ -23,4 +23,6 @@ USER android
 
 RUN mkdir -p /home/android/BSP
 
-RUN chown -R android:android /home/android/BSP
+RUN chown -R android:android /home/android
+
+WORKDIR /home/android
