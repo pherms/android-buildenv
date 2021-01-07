@@ -6,7 +6,7 @@ RUN apt update -y && apt install -y openjdk-8-jdk python git-core \
     lib32z1-dev libncurses5-dev libsdl1.2-dev libwxgtk3.0-dev lzop \
     sudo liblz4-tool python-pip libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
     libgl1-mesa-dev libxml2-utils xsltproc unzip device-tree-compiler lunzip dosfstools vim-common parted udev \
-    pngcrush schedtool zip zlib1g-dev graphviz u-boot-tools rsync nano wget
+    pngcrush schedtool zip zlib1g-dev graphviz u-boot-tools rsync nano wget libssl-dev
 RUN apt install -y gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu gcc-arm-none-eabi
 
 RUN pip install pycrypto
