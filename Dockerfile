@@ -8,7 +8,7 @@ RUN apt update -y && apt install -y openjdk-8-jdk python git-core \
     libgl1-mesa-dev libxml2-utils xsltproc unzip device-tree-compiler lunzip dosfstools vim-common parted udev \
     pngcrush schedtool zip zlib1g-dev graphviz u-boot-tools rsync nano wget libssl-dev cpio
 RUN apt install -y gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu gcc-arm-none-eabi binutils-aarch64-linux-gnu gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi
-
+RUN rm -rf /var/lib/apt/lists/*
 RUN pip install pycrypto
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
